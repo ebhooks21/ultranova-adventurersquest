@@ -1,6 +1,9 @@
 /**
  * Game.js -- File to define the game class.
  */
+
+import {UltraNova} from "../js/UltraNova.js";
+
 class Game
 {
 	/**
@@ -8,7 +11,9 @@ class Game
 	 */
 	constructor()
 	{
+		let self = this;
 
+		self.un = new UltraNova();
 	}
 
 	/**
