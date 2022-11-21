@@ -3,6 +3,7 @@
  */
 
 import {UltraNova} from "../js/UltraNova.js";
+import {Screen} from "../js/Screen.js";
 
 class Game
 {
@@ -13,7 +14,8 @@ class Game
 	{
 		let self = this;
 
-		self.un = new UltraNova();
+		self.un = new UltraNova(this);
+		self.screen = new Screen(this);
 	}
 
 	/**
@@ -21,7 +23,20 @@ class Game
 	 */
 	start()
 	{
-		alert("HERE2");
+		let self = this;
+
+		//Start the game
+		(self.un).start();
+	}
+
+	/**
+	 * Function to draw the player info area.
+	 */
+	drawPlayerInfoArea(player)
+	{
+		let self = this;
+
+		(self.screen).drawPlayerInfoArea(player);
 	}
 };
 

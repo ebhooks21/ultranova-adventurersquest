@@ -7,9 +7,20 @@ class UltraNova
 	/**
 	 * Main constructor for the UltraNova class.
 	 */
-	constructor()
+	constructor(game)
 	{
-		alert("Ultra Nova");
+		let self = this;
+
+		self.game = game;
+	}
+
+	/**
+	 * Function to start the UltraNova.
+	 */
+	start()
+	{
+		let self = this;
+		self.showMainDisplay();
 	}
 
 	/**
@@ -17,6 +28,10 @@ class UltraNova
 	 */
 	showMainDisplay()
 	{
+		let self = this;
+
+		//Draw the player area
+		(self.game).drawPlayerInfoArea(null);
 	}
 };
 
