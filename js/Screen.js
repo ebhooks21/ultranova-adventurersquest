@@ -18,7 +18,7 @@ class Screen
 	 */
 	drawPlayerInfoArea(player)
 	{
-		$("#playerdataarea-playername").html("TEST");
+		$("#playerdataarea-playername").html(player.name);
 	}
 };
 

@@ -2,6 +2,8 @@
  * UltraNova.js -- File to store the UltraNova class.
  */
 
+import {Player} from "../js/Player.js";
+
 class UltraNova
 {
 	/**
@@ -12,6 +14,7 @@ class UltraNova
 		let self = this;
 
 		self.game = game;
+		self.player = new Player("Eric");
 	}
 
 	/**
@@ -31,7 +34,7 @@ class UltraNova
 		let self = this;
 
 		//Draw the player area
-		(self.game).drawPlayerInfoArea(null);
+		(self.game).drawPlayerInfoArea(self.player);
 	}
 };
 

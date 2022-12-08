@@ -14,8 +14,8 @@ class Game
 	{
 		let self = this;
 
-		self.un = new UltraNova(this);
-		self.screen = new Screen(this);
+		self.un = new UltraNova(self);
+		self.screen = new Screen(self);
 	}
 
 	/**
