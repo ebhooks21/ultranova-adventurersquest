@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ultranova</title>
+
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./images/bootstrap-icons-1.10.2/bootstrap-icons.css">
+
+		<script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+
+		<script type="module">
+			import {Game} from "./js/Game.js";
+
+			let game = new Game();
+
+			game.start();
+		</script>
+	</head>
+
+	<body class="col-12">
+		<div class="col-12 playerdataarea">
+			<div class="col-3 playerstatusarea">
+				<span id="playerdataarea-playername"></span>
+			</div>
+		</div>
+	</body>
+</html>

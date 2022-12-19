@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+platforms/android/app/build/
+platforms/browser/
+platforms/electron/build/
+platforms/electron/build-res/

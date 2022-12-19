@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "index.html",
+  "name": "Ultranova",
+  "short_name": "Ultranova",
+  "version": "com.ultranova",
+  "description": "Sample Apache Cordova App",
+  "author": "Apache Cordova Team"
+}
