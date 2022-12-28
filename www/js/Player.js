@@ -11,6 +11,7 @@ class Player
 		let self = this;
 
 		self.name = name;
+		self.sprite = "./images/helmets/helmet2.png";
 		self.level = 1;
 	}
 };

@@ -18,7 +18,8 @@ class Screen
 	 */
 	drawPlayerInfoArea(player)
 	{
-		$("#playerdataarea-playername").html(player.name);
+		$("#playerdataarea-playericon").html("<img src='" + player.sprite + "' class='ht-100' />");
+		$("#playerdataarea-playername").html(player.name + "<br>" + player.level);
 	}
 };
 
